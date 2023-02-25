@@ -15,12 +15,12 @@ Additional optional features include:
 
 The main content can be customised in `index.md`.
 
-Most of the configuration can be done in `_data/site.yml`.  Fine-tuning of
-styles and additional content can be done in `soon.scss` and the
-templates in the `_includes` directory.
+Most of the configuration can be done in `_data/site.yml`.  Additional content
+can be customised through the templates in the `_includes` directory.
 
-The styles are largely based on a heavily simplified version of
-[Bulma](https://bulma.io).
+Styling is done through [Tailwind CSS](https://tailwindcss.com/).  Styles can
+be fine-tuned through editing the templates directly, or through
+`soon.css` and `tailwind.config.js`.
 
 ## Licence
 

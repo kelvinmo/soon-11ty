@@ -1,0 +1,35 @@
+/*! soon | BSD 3-Clause License | github.com/kelvinmo/soon */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading font-bold leading-verytight;
+    }
+
+    h1 {
+        @apply text-4xl leading-verytight mb-2;
+    }
+    h1:not(:first-child) {
+        @apply mt-4;
+    }
+
+    h2 {
+        @apply text-3xl leading-verytight mb-2;
+    }
+    h2:not(:first-child) {
+        @apply mt-5;
+    }
+}
+
+@layer components {
+    .button {
+        @apply appearance-none items-center inline-flex text-base h-9 justify-center px-3 relative align-top shadow-none bg-primary border border-primary text-text cursor-pointer text-center whitespace-nowrap;
+        @apply hover:border-transparent hover:bg-primary-dark;
+        @apply focus:border-primary-light focus:outline-none;
+        @apply active:border-transparent active:bg-primary-verydark active:outline-none;
+    }
+}

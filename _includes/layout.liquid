@@ -14,28 +14,29 @@
         <link rel="stylesheet" href="soon.css">
 
         {% if site.social %}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css">
         {% endif %}
 
         {% if site.background %}
         <style type="text/css">
-            html { background: url("{{ site.background }}") top left / cover no-repeat; }
+            body { background: url("{{ site.background }}") top left / cover no-repeat; }
         </style>
         {% endif %}
 
         {% include 'head' %}
     </head>
-    <body>
-        <div class="soon-box" id="soon-box">
-            <div class="soon-box-wrapper" id="soon-box-wrapper">
-                <section class="section main">
+    <body class="bg-background font-base font-normal leading-normal text-base text-text">
+        <div class="absolute top-0 left-0 bottom-0 right-0 flex items-center justify-center" id="soon-box">
+            <div class="relative text-center md:my-0 md:mx-auto md:w-640px print:my-0 print:mx-auto print:w-640px" id="soon-box-wrapper">
+                <section class="py-6 main">
                     {% if site.logo %}
-                        <div class="subsection brand">
-                            <img src="{{ site.logo }}" class="logo">
+                        <div class="pb-4 brand">
+                            <img src="{{ site.logo }}" class="block max-h-100px w-auto h-auto my-0 mx-auto">
                         </div>
                     {% endif %}
 
-                    <div class="subsection content">
+                    <div class="pb-4 last:pb-0 text-2xl leading-normal content">
                         {{ content }}
                     </div>
                 </section>
