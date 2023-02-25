@@ -17,6 +17,12 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         {% endif %}
 
+        {% if site.background %}
+        <style type="text/css">
+            html { background: url("{{ site.background }}") top left / cover no-repeat; }
+        </style>
+        {% endif %}
+
         {% include 'head' %}
     </head>
     <body>
