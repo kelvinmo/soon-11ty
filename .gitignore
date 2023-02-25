@@ -1,0 +1,6 @@
+# nodejs modules
+node_modules
+package-lock.json
+
+# output files
+_site

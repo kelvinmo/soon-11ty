@@ -1,0 +1,16 @@
+{
+  "name": "soon-11ty",
+  "version": "0.1.0",
+  "description": "A coming soon page built on Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}
