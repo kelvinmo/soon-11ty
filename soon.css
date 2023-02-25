@@ -28,8 +28,8 @@
 @layer components {
     .button {
         @apply appearance-none items-center inline-flex text-base h-9 justify-center px-3 relative align-top shadow-none bg-primary border border-primary text-text cursor-pointer text-center whitespace-nowrap;
-        @apply hover:border-transparent hover:bg-primary-dark;
-        @apply focus:border-primary-light focus:outline-none;
-        @apply active:border-transparent active:bg-primary-verydark active:outline-none;
+        @apply hover:border-transparent hover:bg-primary-1025;
+        @apply focus:border-primary-950 focus:outline-none;
+        @apply active:border-transparent active:bg-primary-1050 active:outline-none;
     }
 }

@@ -1,4 +1,8 @@
 const colors = require('tailwindcss/colors');
+const pSBC = require('shade-blend-color').default;
+
+const primary = '#9a728d';
+const grey = '#828282';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,12 +17,17 @@ module.exports = {
       black: colors.black,
       text: '#fdfdfd',
       background: '#2a1e20',
-      primary: '#9a728d',
-      'primary-light': '#a58199',
-      'primary-dark': '#956b87',
-      'primary-verydark': '#8d6580',
-      grey: '#828282',
-      'dark-grey': '#424242'
+      primary: {
+        950: pSBC(0.05, primary),
+        DEFAULT: primary,
+        1025: pSBC(-0.025, primary),
+        1050: pSBC(-0.05, primary)
+      },
+      grey: {
+        600: pSBC(-0.4, grey),
+        DEFAULT: grey,
+        1250: pSBC(-0.25, grey)
+      }
     },
     fontFamily: {
       base: '"Roboto", Helvetica, Arial, sans-serif',
