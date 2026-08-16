@@ -1,6 +1,6 @@
 {
   "name": "soon-11ty",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A coming soon page built on Eleventy",
   "main": "index.js",
   "scripts": {
