@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@3
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -22,7 +22,7 @@ jobs:
         run: 'sed -i "s/launch_date:\\s\+[-0-9]\+$/launch_date: ${{ steps.launch-date.outputs.LAUNCH_DATE }}/" _data/site.yml'
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update launch date
